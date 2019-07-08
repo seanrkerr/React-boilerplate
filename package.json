@@ -1,0 +1,62 @@
+{
+  "name": "boilerplate",
+  "version": "1.0.0",
+  "description": "a simple yet powerful boilerplate for reactjs",
+  "keywords": [
+    "Reactjs",
+    "parceljs",
+    "babel7",
+    "starter",
+    "boilerplate"
+  ],
+  "author": "Sean Kerr",
+  "license": "ISC",
+  "scripts": {
+    "test": "jest -u",
+    "test-watch": "jest --watch",
+    "start": "parcel index.html --no-cache",
+    "start:prod": "parcel build index.html",
+    "start:link": "cp -R ./dist ./node_modules/react-hot-loader && cp -R ./**/*.js ./node_modules/react-hot-loader",
+    "cypress-local": "node_modules/.bin/cypress open --config baseUrl=http://localhost:1234"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-0",
+    "@babel/preset-env": "^7.4.5",
+    "@babel/preset-react": "^7.0.0",
+    "@testing-library/react": "^8.0.4",
+    "babel-jest": "^24.8.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "core-js": "^3.1.4",
+    "cypress": "^3.3.2",
+    "husky": "^3.0.0",
+    "jest": "^24.8.0",
+    "jest-dom": "^3.5.0",
+    "parcel-bundler": "^1.12.3",
+    "pretty-quick": "^1.11.1"
+  },
+  "dependencies": {
+    "@hot-loader/react-dom": "^16.8.6",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-hot-loader": "^4.11.1",
+    "react-router": "^5.0.1"
+  },
+  "alias": {
+    "react-dom": "@hot-loader/react-dom"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "transform": {
+    "\\.js$": "<rootDir>/node_modules/babel-jest"
+  },
+  "jest": {
+    "testPathIgnorePatterns": [
+      "cypress"
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+# react-boilerplate
+
+An opinionated light weight boilerplate for react
+
+  <a href="https://david-dm.org/seanrkerr/react-boilerplate">
+    <img src="https://david-dm.org/seanrkerr/react-boilerplate.svg" alt="Dependency Status" />
+  </a>
+  
+  <a href="https://david-dm.org/seanrkerr/react-boilerplate#info=devDependencies">
+    <img src="https://david-dm.org/seanrkerr/react-boilerplate/dev-status.svg" alt="devDependency Status" />
+  </a>
+
+## Quick start
+
+1. git clone https://github.com/seanrkerr/react-boilerplate.git
+2. cd react-boilerplate
+3. rm -rf .git && yarn
+4. yarn start

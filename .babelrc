@@ -1,0 +1,13 @@
+{
+  "plugins": ["react-hot-loader/babel", "transform-class-properties"],
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "entry",
+        "corejs": "3"
+      }
+    ],
+    "@babel/preset-react"
+  ]
+}
