@@ -56,10 +56,6 @@ const App = () => {
 
 function Home() {
   return (
-    // <div className="container">
-    //  c
-    //   <img src={ReactIcon} width="200px" />
-    // </div>
     <div className="container">
       <h2>React boilerplate</h2>
       <img src={ReactIcon} width="200px" />
