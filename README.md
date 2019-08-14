@@ -16,3 +16,15 @@ An opinionated light weight boilerplate for react
 2. cd react-boilerplate
 3. rm -rf .git && yarn
 4. yarn start
+
+## Features
+
+[styled-components](https://github.com/styled-components/styled-components)
+
+[rebassjs](https://rebassjs.org/)
+
+[cypress](https://www.cypress.io/)
+
+Hot module reloading
+
+routing
