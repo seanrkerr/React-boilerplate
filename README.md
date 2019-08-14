@@ -12,8 +12,8 @@ An opinionated light weight boilerplate for react
 
 ## Quick start
 
-1. git clone https://github.com/seanrkerr/react-boilerplate.git
-2. cd react-boilerplate
+1. git clone https://github.com/seanrkerr/opinionated-react-boilerplate.git
+2. cd opinionated-react-boilerplate
 3. rm -rf .git && yarn
 4. yarn start
 
