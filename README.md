@@ -1,4 +1,4 @@
-# react-boilerplate
+# opinionated-react-boilerplate
 
 An opinionated light weight boilerplate for react
 
