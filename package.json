@@ -1,11 +1,12 @@
 {
   "name": "opinionated-react-boilerplate",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "a simple yet powerful boilerplate for reactjs",
   "keywords": [
     "Reactjs",
-    "parceljs",
-    "babel7",
+    "Parceljs",
+    "Babel7",
+    "Redux",
     "starter",
     "boilerplate"
   ],
