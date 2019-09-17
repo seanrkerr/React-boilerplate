@@ -28,3 +28,5 @@ An opinionated light weight boilerplate for react
 Hot module reloading
 
 routing
+
+Redux
