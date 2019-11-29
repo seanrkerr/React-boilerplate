@@ -30,3 +30,5 @@ Hot module reloading
 routing
 
 Redux
+
+Progressive Web support (PWA)

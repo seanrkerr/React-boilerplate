@@ -1,6 +1,6 @@
 {
   "name": "opinionated-react-boilerplate",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "a simple yet powerful boilerplate for reactjs",
   "keywords": [
     "Reactjs",
@@ -16,8 +16,7 @@
     "test": "jest -u",
     "test-watch": "jest --watch",
     "start": "parcel index.html --no-cache --port 3000",
-    "start:prod": "parcel build index.html",
-    "start:link": "cp -R ./dist ./node_modules/react-hot-loader && cp -R ./**/*.js ./node_modules/react-hot-loader",
+    "build:prod": "parcel build index.html",
     "cypress-local": "node_modules/.bin/cypress open --config baseUrl=http://localhost:1234"
   },
   "devDependencies": {
