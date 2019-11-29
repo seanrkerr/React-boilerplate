@@ -1,7 +1,7 @@
 import React from "react";
 import { hot } from "react-hot-loader";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import { StyledSection } from "./style";
+import { StyledSection, Container } from "./style";
 import { createGlobalStyle } from "styled-components";
 import ReactIcon from "../src/assets/react.svg";
 import { Flex, Box } from "rebass";
@@ -56,11 +56,11 @@ const App = () => {
 
 function Home() {
   return (
-    <div className="container">
+    <Container>
       <h2>React boilerplate</h2>
 
-      <ReactIcon width="200px" />
-    </div>
+      <ReactIcon width="200px" height="200px" />
+    </Container>
   );
 }
 
