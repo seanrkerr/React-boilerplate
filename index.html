@@ -4,11 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- <link rel="manifest" href="manifest.json" /> -->
     <title>Boilerplate</title>
   </head>
 
   <body>
+    <noscript>This page requires javascript to be enabled</noscript>
     <div id="root"></div>
+
+    <div id="output"></div>
+
+    <script>
+      window.addEventListener("load", function() {
+        var outputElement = document.getElementById("output");
+
+        navigator.serviceWorker
+          .register("sw.js", { scope: "/" })
+          .then(function(r) {
+            console.log("registered service worker");
+          })
+          .catch(function(whut) {
+            console.error("uh oh... ");
+            console.error(whut);
+          });
+
+        window.addEventListener("beforeinstallprompt", function(e) {
+          //this is only used for debug
+          //outputElement.textContent = "beforeinstallprompt Event fired";
+          //this is only used for debug
+
+          // e.userChoice will return a Promise. For more details read: http://www.html5rocks.com/en/tutorials/es6/promises/
+          e.userChoice.then(function(choiceResult) {
+            console.log(choiceResult.outcome);
+
+            if (choiceResult.outcome == "dismissed") {
+              console.log("User cancelled homescreen install");
+            } else {
+              console.log("User added to homescreen");
+            }
+          });
+        });
+      });
+    </script>
     <script src="./src/index.js"></script>
   </body>
 </html>
