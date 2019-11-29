@@ -3,7 +3,7 @@ import { hot } from "react-hot-loader";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import { StyledSection } from "./style";
 import { createGlobalStyle } from "styled-components";
-import ReactIcon from "../src/assets/react-1.svg";
+import ReactIcon from "../src/assets/react.svg";
 import { Flex, Box } from "rebass";
 
 const GlobalStyle = createGlobalStyle`
@@ -58,7 +58,8 @@ function Home() {
   return (
     <div className="container">
       <h2>React boilerplate</h2>
-      <img src={ReactIcon} width="200px" />
+
+      <ReactIcon width="200px" />
     </div>
   );
 }
