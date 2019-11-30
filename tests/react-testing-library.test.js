@@ -2,14 +2,14 @@ import React from "react";
 import "babel-polyfill";
 import App from "../src/app";
 import { render, cleanup } from "@testing-library/react";
-import "jest-dom/extend-expect";
+//import "jest-dom/extend-expect";
 
 afterEach(cleanup);
 
 test("renders a message", () => {
   const { container, getByText } = render(<App />);
 
-  expect(getByText("React boilerplate")).toBeInTheDocument();
+  expect(getByText("React boilerplate")).toBeDefined();
   expect(container.firstChild).toMatchInlineSnapshot(`
     <section
       class="sc-bdVaJa loRihK"
